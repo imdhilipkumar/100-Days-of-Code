@@ -34,12 +34,14 @@ def make_coffee(drink_name, order_ingredient):
     for item in order_ingredient:
         resources[item] -= order_ingredient[item]
     print(f"Here Your {drink_name} ☕  Enjoy !!! ")
+
+
 while is_on:
-    choice=input("What would you like ? (espresso / latte / cappuccino): ").lower()
-    # turn of the machine user choossethe off keyword
-    if choice =="off":
-        is_on=False
-    elif choice=="report":
+    choice = input("What would you like ? (espresso / latte / cappuccino): ").lower()
+    # turn of the machine user choosse the off keyword
+    if choice == "off":
+        is_on = False
+    elif choice == "report":
         print(f"water : {resources['water']} ml ")
         print(f"milk : {resources['milk']} ml")
         print(f"coffee : {resources['coffee']} g")
