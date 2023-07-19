@@ -1,0 +1,14 @@
+from turtle import Turtle, Screen
+
+# object creation
+timmy = Turtle()
+for _ in range(20):
+    timmy.forward(10)
+    timmy.penup()
+    timmy.forward(10)
+    timmy.pendown()
+
+
+screen = Screen()
+screen.exitonclick()
+
