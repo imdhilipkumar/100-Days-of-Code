@@ -29,7 +29,7 @@ def spirograph(size):
         timmy.setheading(timmy.heading() + size)
 
 
-spirograph(2)
+spirograph(5)
 
 # tutle show long time
 screen = t.Screen()
